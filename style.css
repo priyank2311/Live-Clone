@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: pink;
+}
+.phone {
+    width: 17rem;
+    height: 30rem;
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 30rem;
+    align-items: center;
+    background-color: black;
+    border-radius: 25px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.power{
+    width: 6px;
+    height: 30px;
+    background-color: black;
+    position: relative;
+    top: -23rem;
+    margin-left: 29.8rem;
+    border-radius: 15rem;   
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.vol1{
+    width: 6px;
+    height: 30px;
+    background-color: black;
+    position: relative;
+    top: -27rem;
+    margin-left: 46.8rem;
+    border-radius: 15rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.vol2{
+    width: 6px;
+    height: 30px;
+    background-color: black;
+    position: relative;
+    top: -27rem;
+    margin-left: 46.8rem;
+    border-radius: 15rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.main-btn {
+    width: 40px;
+    height: 40px;;
+    border: 2px solid #C0C0C0;
+    position: relative;
+    top: -9rem;
+    margin-left: 37.5rem;
+    border-radius: 100%;
+}
+iframe {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    margin: 0.5rem;
+    top: -37rem;
+    margin-left: 30.5rem;
+    border: 0px solid black;
+}
+
+.reaction img {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    top: -37rem;
+    left: 31.6rem;
+    cursor: pointer;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+}
+.reaction img:active {
+    transform: scale(0.95);
+}
+.emoji{
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    animation: moveEmoji 3s linear infinite;
+}
+@keyframes moveEmoji{
+    0%{
+        transform: translateY(0%) translateX(-100px);
+        opacity: 1;
+        width: 25px;
+        height: 25px;
+    }
+    25%{
+        transform: translateY(-500%) translateX(-50px);
+        width: 20px;
+        height: 20px;
+    }
+    50%{
+        transform: translateY(-1000%) translateX(-100px);
+        width: 15px;
+        height: 15px;
+    }
+    75%{
+        transform: translateY(-1500%) translateX(-50px);
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        transform: translateY(-2000%) translateX(-100px);
+        opacity: 0;
+        width: 5px;
+        height: 5px;
+    }
+}
